@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<protocol name="extended_wayland">
+
+    <interface name="ping_pong" version="1">
+        <request name="ping">
+            <arg name="message" type="string"/>
+        </request>
+        <event name="pong">
+            <arg name="message" type="string"/>
+        </event>
+    </interface>
+
+</protocol>
