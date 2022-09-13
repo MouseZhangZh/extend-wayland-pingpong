@@ -1,6 +1,6 @@
 #include <stdlib.h>
 
-#include <weston/compositor.h>
+#include <libweston/libweston.h>
 
 #include "pingpong-server-protocol.h"
 
@@ -58,7 +58,7 @@ bind_ping_pong(struct wl_client *client, void *data, uint32_t version, uint32_t 
 }
 
 WL_EXPORT int
-module_init(struct weston_compositor *compositor, int *argc, char *argv[])
+wet_module_init(struct weston_compositor *compositor, int *argc, char *argv[])
 {
     struct context *ctx;
     weston_log("Pingpong module initialized!");
